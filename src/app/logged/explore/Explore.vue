@@ -2,17 +2,26 @@
   <div class="c-explore">
     <Menu />
     <Title />
+    <Search />
+    <List />
+    <Footer />
   </div>
 </template>
 
 <script>
 import Title from './components/Title.vue'
 import Menu from './components/Menu.vue'
+import Search from './components/Search.vue'
+import List from './components/list/List.vue'
+import Footer from './components/Footer.vue'
 export default {
 
   components: {
     Title,
-    Menu
+    Menu,
+    Search,
+    List,
+    Footer,
   },
 
 }
