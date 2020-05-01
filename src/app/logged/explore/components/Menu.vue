@@ -1,0 +1,45 @@
+<template>
+  <div class="c-menu">
+      <nav class="c-menu_menu">
+        <div class="c-menu_button"></div>
+        <h1 class="c-menu_logo">/learncoding</h1>
+        <img class="c-menu_userPhoto" src="" alt="">
+      </nav>
+  </div>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style lang="scss">
+@import '@/assets/css/mixins/text.scss';
+.c-menu {
+  width: 100%;
+  padding: 30px 0;
+  &_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_logo {
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+  }
+  &_button {
+    width: 15px;
+    height: 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
+  &_userPhoto {
+    background-image: url('https://avatars3.githubusercontent.com/u/22720953?s=460&u=d6981c42b1ff94318d3f12a99883a29fb568de0b&v=4');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+  }
+}
+</style>
