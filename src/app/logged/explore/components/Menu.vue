@@ -18,7 +18,7 @@ export default {
 @import '@/assets/css/mixins/make-elements';
 .c-menu {
   width: 100%;
-  padding: 30px 0;
+  padding: 15px 0;
   &_menu {
     display: flex;
     justify-content: space-between;
