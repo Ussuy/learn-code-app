@@ -15,7 +15,11 @@
 }
 
 @mixin make-subtitle() {
-  grid-area: subtitle;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
+}
+
+@mixin make-input() {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
 }
