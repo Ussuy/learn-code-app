@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/assets/css/mixins/reset-elements.scss';
+@import '@/assets/css/mixins/make-elements.scss';
 @import '@/assets/css/mixins/text.scss';
 .c-search {
   padding: 16px 0;
