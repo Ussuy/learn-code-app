@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/assets/css/mixins/text.scss';
+@import '@/assets/css/mixins/make-elements';
 .c-course {
   background-color: #E6E6F0;
   border-radius: 15%;

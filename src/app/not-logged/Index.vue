@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/assets/css/mixins/text.scss';
+@import '@/assets/css/mixins/make-elements';
 .c-index {
   width: 100%;  
   height: 100%;

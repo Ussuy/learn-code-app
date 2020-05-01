@@ -11,8 +11,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/assets/css/mixins/make-elements.scss';
-@import '@/assets/css/mixins/text.scss';
+@import '@/assets/css/mixins/reset-elements.scss';
+@import '@/assets/css/mixins/make-elements';
 .c-search {
   padding: 16px 0;
   
@@ -22,6 +22,7 @@ export default {
     width: 100%;
     padding-left: 5px;
     border-left: 3px solid black;
+    color: #E6E6F0;
   }
 }
 </style>

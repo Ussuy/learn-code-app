@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/assets/css/mixins/text.scss';
+@import '@/assets/css/mixins/make-elements';
 .c-menu {
   width: 100%;
   padding: 30px 0;
