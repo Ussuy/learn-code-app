@@ -1,0 +1,27 @@
+<template>
+  <div class="c-search">
+    <input class="c-search_input" type="text" placeholder="Search for...">
+  </div>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style lang="scss">
+@import '@/assets/css/mixins/reset-elements.scss';
+@import '@/assets/css/mixins/text.scss';
+.c-search {
+  padding: 16px 0;
+  
+  &_input {
+    @include reset-input();
+    @include make-input();
+    width: 100%;
+    padding-left: 5px;
+    border-left: 3px solid black;
+  }
+}
+</style>
