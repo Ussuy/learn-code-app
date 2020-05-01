@@ -1,17 +1,40 @@
-@mixin reset-input() {
-  background: none;
-  border: none;
-  outline: 0;
-  color: #E6E6F0;
-  &:focus {
-    border: none;
-    border-left: 3px solid black;
-    outline: 0;
-    &::placeholder {
-      color: transparent;
-    }
-  }
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+
+@mixin make-logo() {
+  font-family: 'Kanit', sans-serif;
+  font-size: 16px;
+}
+
+@mixin make-label() {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+@mixin make-subtitle() {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+@mixin make-input() {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
   &::placeholder {
     color: #E6E6F0;
   }
+  &:focus {
+    border-left: 3px solid black;
+  }
+}
+
+@mixin make-button() {
+  @include make-label()
+}
+
+@mixin make-course-name() {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
 }

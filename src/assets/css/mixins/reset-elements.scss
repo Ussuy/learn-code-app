@@ -1,0 +1,22 @@
+@mixin reset-input() {
+  background: none;
+  border: none;
+  outline: 0;
+  &:focus {
+    border: none;
+    outline: 0;
+    &::placeholder {
+      color: transparent;
+    }
+  }
+}
+
+@mixin reset-button() {
+  background: none;
+  border: none;
+  outline: 0;
+  &:focus {
+    border: none;
+    outline: 0;
+  }
+}
