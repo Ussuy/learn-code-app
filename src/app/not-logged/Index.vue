@@ -1,10 +1,11 @@
 <template>
   <div class="c-index">
     <h1 class="c-index_logo">\learncoding:</h1>
-    <a class="c-index_label" href="#" >skip</a>
+    <router-link class="c-index_label" to="/logged/explore">Skip</router-link> 
     <h2 class="c-index_subtitle">Learn to code.<br />Free for students</h2>
     <img class="c-index_image" src="./../../assets/images/index.png" alt="Imagem do index">
-    <div class="c-index_start">Start</div>
+    <router-link tag="div" class="c-index_start" to="/logged/explore">Start</router-link> 
+
   </div>
 </template>
 

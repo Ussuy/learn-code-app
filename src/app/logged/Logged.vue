@@ -1,18 +1,16 @@
 <template>
   <div class="c-logged">
     <Menu />
-    <Explore />
+    <router-view />
   </div>
 </template>
 
 <script>
 import Menu from './components/Menu.vue'
-import Explore from './explore/Explore.vue'
 export default {
 
   components: {
-    Menu,
-    Explore
+    Menu
   }
 
 }

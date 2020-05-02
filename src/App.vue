@@ -24,5 +24,6 @@ export default {
 #app {
   height: 100vh;
   padding: 16px 20px;
+  box-sizing: border-box;
 }
 </style>
