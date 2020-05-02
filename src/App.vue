@@ -1,19 +1,14 @@
 <template>
   <div id="app">
-    <!-- <Logged /> -->
-    <Index />
+    <router-view />
   </div>
 </template>
 
 <script>
-import Index from './app/not-logged/Index.vue'
-// // import Logged from './app/logged/Logged.vue'
 
 export default {
   name: 'App',
   components: {
-    Index,
-    // Logged
   }
 }
 </script>
