@@ -31,7 +31,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .c-list {
   display: grid;
   grid-template: auto / 1fr 1fr;

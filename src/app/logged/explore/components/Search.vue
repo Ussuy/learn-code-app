@@ -10,7 +10,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '@/assets/css/mixins/reset-elements.scss';
 @import '@/assets/css/mixins/make-elements';
 .c-search {

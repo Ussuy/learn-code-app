@@ -10,13 +10,13 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '@/assets/css/mixins/reset-elements.scss';
 @import '@/assets/css/mixins/make-elements';
 .c-footer {
   width: 100%;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 10px;
   &_button {
     width: 120px;
     @include reset-button();
