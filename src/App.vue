@@ -7,7 +7,7 @@
 
 <script>
 import Index from './app/not-logged/Index.vue'
-// import Logged from './app/logged/Logged.vue'
+// // import Logged from './app/logged/Logged.vue'
 
 export default {
   name: 'App',
