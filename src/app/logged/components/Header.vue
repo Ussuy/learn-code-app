@@ -1,7 +1,7 @@
 <template>
   <div class="c-header">
       <header class="c-header_header">
-        <div class="c-header_openMenu"></div>
+        <div class="c-header_openMenu" @click="showMenu()"></div>
         <h1 class="c-header_logo">/learncoding</h1>
         <div class="c-header_userPhoto"></div>
       </header>
@@ -9,8 +9,18 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 export default {
 
+  methods: {
+    ...mapActions({
+      showMenu: 'showMenu'
+    }),
+  },
+
+  mounted() {
+    console.log(this)
+  }
 }
 </script>
 
