@@ -1,6 +1,7 @@
 <template>
   <div class="c-footer">
-    <button class="c-footer_button">View more</button>
+    <router-link class="c-footer_button c-footer_button--more" to="/logged/courses" tag="button">View more</router-link>
+    <router-link class="c-footer_button c-footer_button--mycourses" to="/logged/courses" tag="button">My courses</router-link>
   </div>
 </template>
 
@@ -15,8 +16,9 @@ export default {
 @import '@/assets/css/mixins/make-elements';
 .c-footer {
   width: 100%;
-  text-align: center;
   padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
   &_button {
     width: 120px;
     @include reset-button();

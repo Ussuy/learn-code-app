@@ -1,7 +1,9 @@
 <template>
   <div class="c-logged">
     <Menu />
-    <router-view />
+    <transition name="fade" mode="out-in">
+      <router-view />
+    </transition>
   </div>
 </template>
 
