@@ -1,45 +1,57 @@
 <template>
-  <div class="c-menu">
-      <nav class="c-menu_menu">
-        <div class="c-menu_button"></div>
-        <h1 class="c-menu_logo">/learncoding</h1>
-        <img class="c-menu_userPhoto" src="" alt="">
-      </nav>
-  </div>
+  <nav class="c-menu">
+    <span class="c-menu_close" @click="hideMenu()">X</span>
+    <ul class="c-menu_list">
+      <router-link class="c-menu_item" tag="li" to="/">Index</router-link>
+      <router-link class="c-menu_item" tag="li" to="/logged/explore">Explore</router-link>
+      <router-link class="c-menu_item" tag="li" to="/logged/courses">Courses</router-link>
+    </ul>
+  </nav>
 </template>
 
 <script>
 export default {
 
+  methods: {
+    hideMenu() {
+      return
+    }
+  }
+
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '@/assets/css/mixins/make-elements';
+@import '@/assets/css/mixins/reset-elements';
+
 .c-menu {
-  width: 100%;
-  padding: 15px 0;
-  &_menu {
+  width: 200px;
+  height: 100vh;
+  padding: 25px;
+  background: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  box-shadow: 0 1px 5px rgba(61,61,61,.5);
+  &_list {
+    @include reset-list();
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;  
+    justify-content: flex-start;
+    height: 100%;
   }
-  &_logo {
-    font-family: 'Kanit', sans-serif;
-    font-size: 16px;
+  &_item {
+    @include make-subtitle();
+    margin-bottom: 15px;
   }
-  &_button {
-    width: 15px;
-    height: 10px;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-  }
-  &_userPhoto {
-    background-image: url('https://avatars3.githubusercontent.com/u/22720953?s=460&u=d6981c42b1ff94318d3f12a99883a29fb568de0b&v=4');
-    background-size: cover;
-    width: 40px;
-    height: 40px;
-    border-radius: 4px;
+  &_close {
+    @include make-subtitle();
+    position: absolute;
+    right: 15px;
+    top: 15px;
   }
 }
+
 </style>

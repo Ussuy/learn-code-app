@@ -1,6 +1,7 @@
 <template>
   <div class="c-logged">
-    <Menu />
+    <Header />
+    <Menu v-if="false"/>
     <transition name="fade" mode="out-in">
       <router-view />
     </transition>
@@ -9,9 +10,11 @@
 
 <script>
 import Menu from './components/Menu.vue'
+import Header from './components/Header.vue'
 export default {
 
   components: {
+    Header,
     Menu
   }
 
